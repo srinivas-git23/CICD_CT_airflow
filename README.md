@@ -4,6 +4,9 @@ What is Cloud Composer?
 Could Composer is a fully managed workflow orchestration service built on Google Cloud Platform. It is built on top of Apache airflow, which allows you to define, schedule, and monitor your complex workflows.
 The below is the architecture of the pipeline:
 ![Picture1](https://github.com/user-attachments/assets/75336997-01bc-4c25-aeb7-846f9266ea32)
+
+
+
 Here are the steps that we follow to build this pipeline. 
 1.	Initially after training, evaluating and testing the model it(model.joblb) gets loaded into the gcs bucket.  
 2.	But the model might become stale if not trained continuously as the new data comes in. This is where the above pipeline comes into picture.
