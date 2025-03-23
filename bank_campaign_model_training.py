@@ -79,7 +79,7 @@ def save_model_artifact(model_name, pipeline):
     model_artifact.upload_from_filename(artifact_name)
 
 def load_model_artifact(file_name):
-    blob = bucket.blob("ml-artifacts/" + file_name)
+    blob = bucket.blob("bank_campaign_artifact/" + file_name)
     blob.download_to_filename(file_name)
     return load(file_name)
 
